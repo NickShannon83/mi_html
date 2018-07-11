@@ -15,32 +15,29 @@
 
 /* Table Styles */
 
-/*Step 9 NJS*/
+/*Step 9 Sets background of table to a linear gradient from top to bottom and creates a border around the table NJS*/
 table {
 	background: linear-gradient(to bottom, rgb(190,215,255), black);
 	border:5px solid gray;
 	
 }
 
-/*Step 10 NJS*/
+/*Step 10 Creates a border around each th and td element with specified line-height and padding space  NJS*/
 table.pricing th, table.pricing td{
 	border: 3px solid gray;
-	height: 1.4em;
+	line-height: 1.4em;
 	padding: 8px;
 }
 
-th, td{
-	line-height: 1.4em;
-}
 
-/*Step 11 NJS*/
+/*Step 11 Sets the background color of every th element to black, sets font color and weight NJS*/
 table.pricing th{
 	background-color: black;
 	color: rgb(130,210,255);
 	font-weight: normal;
 }
 
-/*Step 12 NJS*/
+/*Step 12 Changes font of every td element changes font size and aligns text to the top NJS*/
 table.pricing td{
 	color: white;
 	font-size: 0.9em;
@@ -52,11 +49,11 @@ table.pricing td{
 
 /* Column Styles */
 
-/*Step 13 NJS*/
+/*Step 13 Sets width of all elements with the if firstCol to 24% of the table width NJS*/
 col#firstCol {
 	width: 24%;
 }
-/*Step 14 NJS*/
+/*Step 14 Sets the width of all dataCols class cells to 19% of the table width NJS*/
 col.dataCols {
 	width: 19%;
 }
@@ -64,16 +61,18 @@ col.dataCols {
 
 /* Table Header Styles */
 
-/*Step 15 NJS*/
+/*Step 15 Adjust the height of every row in the table head  NJS*/
 thead tr{
 	height: 60px;
 }
+
+/*Step 16 Uses the first of psuedo class to adjust the font of the first cell of the table NJS*/
 thead tr:first-of-type th:first-of-type{
 	font-size: 2em;
 }
 
 
-
+/*Step 17 Uses the first of psuedo class and not selector to adjust the font color and set background to transparent NJS*/
 thead tr:first-of-type th:not(:first-of-type){
 	background-color: transparent;
 	color:black;
